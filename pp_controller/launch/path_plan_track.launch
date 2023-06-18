@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<launch>
+ 
+  <node pkg="pp_controller" name="path_plan" type="path_plot.py" />
+  <node pkg="pp_controller" name="path_track" type="path_track.py" />
+  <node pkg="pp_controller" name="nearest_pose_isolator" type="find_nearest_pose.py" />
+  <node pkg="pp_controller" name="nearest_goal_isolator" type="find_nearest_goal.py" />
+  <node pkg="pp_controller" name="vehicle_control_node" type="vehicle_controller.py" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="tf_publisher" args="0 0 0 0 0 0 utm trajectory 100" />
+
+</launch>
+

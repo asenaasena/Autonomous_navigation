@@ -1,0 +1,24 @@
+
+
+<launch>
+
+
+
+
+ 
+
+ 
+
+
+ <!-- run_executable -->
+ 
+ <node name = "n03" pkg = "n03" type = "n03" args = "input:=/base03/ouster/points"/>
+
+
+
+
+
+
+
+</launch>
+

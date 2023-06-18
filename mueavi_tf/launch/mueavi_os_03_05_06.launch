@@ -1,0 +1,30 @@
+<launch>
+
+<group ns="base03">
+  <include file="$(find ouster_ros)/launch/sensor.launch">
+    <arg name="sensor_hostname" value="192.168.57.132"/>
+    <arg name="viz" value="false"/>
+    <arg name="tf_prefix" value="/base03/"/>
+    <arg name="udp_profile_lidar" value="LEGACY"/>
+  </include>
+</group>
+
+<group ns="base05">
+  <include file="$(find ouster_ros)/launch/sensor.launch">
+    <arg name="sensor_hostname" value="192.168.57.133"/>
+    <arg name="viz" value="false"/>
+    <arg name="tf_prefix" value="/base05/"/>
+    <arg name="udp_profile_lidar" value="LEGACY"/>
+  </include>
+</group>
+
+<group ns="base06">
+  <include file="$(find ouster_ros)/launch/sensor.launch">
+    <arg name="sensor_hostname" value="192.168.57.134"/>
+    <arg name="viz" value="false"/>
+    <arg name="tf_prefix" value="/base06/"/>
+    <arg name="udp_profile_lidar" value="LEGACY"/>
+  </include>
+</group>
+
+</launch>

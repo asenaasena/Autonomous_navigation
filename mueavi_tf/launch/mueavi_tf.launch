@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="mueavi_tf" name="mueavi_tf_node" type="mueavi_tf_node" output="screen" required="true">
+    </node>
+</launch>

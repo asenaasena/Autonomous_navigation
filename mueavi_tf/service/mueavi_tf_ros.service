@@ -1,0 +1,16 @@
+[Unit]
+Description=MUEAVI roscore and transformations ROS service
+After=network.target
+
+[Service]
+User=mueavi-admin
+ExecStart=/usr/local/bin/run_mueavi_tf.sh
+TimeoutSec=15
+# Restart=on-abort
+RestartSec=30
+StartLimitInterval=350
+StartLimitBurst=10
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,3 @@
+<launch>
+	<node name="postprocess_node1" pkg="post_process_test" type="postprocess_node1" /> 	
+</launch>
