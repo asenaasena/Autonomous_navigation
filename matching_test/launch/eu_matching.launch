@@ -1,0 +1,35 @@
+<launch>
+<param name="/use_sim_time" value="true"/>
+ <!-- roslaunch -->
+ <include file = "/home/jayden/catkin_ws/src/mueavi_tf/launch/mueavi_tf.launch">
+ 
+ </include>
+
+ <!-- roslaunch -->
+ <include file = "/home/jayden/catkin_ws/src/Launch_File/n06.launch">
+
+
+
+ </include>
+
+ <!-- run_executable -->
+ 
+ <node name = "n06" pkg = "n06" type = "n06"/>
+
+
+ <!-- run_executable -->
+ 
+ <node name = "eu_cluster" pkg = "eu_cluster" type = "eu_cluster"/>
+
+ <!-- run_executable -->
+ 
+ <node name = "matching_test" pkg = "matching_test" type = "matching_test"/>
+
+
+
+  <!-- rviz -->
+
+  <node type="rviz" name="rviz1" pkg="rviz" args="-d /home/jayden/catkin_ws/src/Launch_File/matching_test.rviz"/>
+
+
+</launch>
